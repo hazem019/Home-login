@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    height: 17px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+}
+
+.logo h4 {
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.logo .btn {
+    width: 90px;
+    height: 26px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    position: relative;
+    top: 1px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+}
+
+.login{
+    max-width: 400px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    padding: 100px;
+    margin: 30px 0 10px 200px;
+  }
+  @media (max-width: 750px) {
+    .login{
+        width: 200px;
+    }
+}
+  .login .title{
+    font-size: 25px;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .user-details .input-box2{
+      margin-bottom: 15px;
+      width: 400px;
+    }
+    @media (max-width: 750px) {
+        form .user-details .input-box2{
+            width: 200px;
+        }
+    }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box2 input{
+      height: 45px;
+      width: 100%;
+      outline: none;
+      font-size: 16px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid #ccc;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+    }
+    
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #000000c2;
+  }
+  .user-details .input-box2 input:focus,
+  .user-details .input-box2 input:valid{
+    border-color: #000000c2;
+  }
+  
+   form input[type="radio"]{
+     display: none;
+   }
+   form .button{
+     height: 45px;
+     margin: 35px 0
+   }
+   form .button input{
+     height: 100%;
+     width: 100px;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background:black;
+   }
+   form .button input:hover{
+    /* transform: scale(0.99); */
+    background: #000000c2;
+    }
+
+
+
+  .main {
+    background: #2E2E2E;
+    color: #FFFFFF;
+    width: 17%;
+    position:absolute;
+    right: 0;
+  }
+.main p {
+    padding: 3px;
+    cursor: pointer;
+}
+  .main .pp {
+    text-align: end;
+    padding: 10px;
+  }
+  .main .pp p {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+@media (max-width: 750px) {
+    .main .pp p{
+        font-size: 12px;
+    }
+}
+
+.main .pp p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scaleX(1); 
+}
+
+.main .logout {
+    position: relative;
+    height: 70px;  
+    background-color: #000000;
+    bottom: -30px;
+}
+@media (max-width: 750px) {
+    .main .logout {
+        width: 126px;
+
+    }
+}
+
+.main .logout .btnlog {
+    width: 90px;
+    height: 26px;
+    border-radius: 10px;
+    background: red;
+    color: #FFFFFF;
+    position: relative;
+    top: 6px;
+    right: -140px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+   
+}
+@media (max-width: 750px) {
+    .main .logout .btnlog {
+        width: 76px;
+        right: -50px;
+    }
+}
+
+.main .logout .user {
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+}
+@media (max-width: 750px) {
+    .main .logout .user {
+        width: 46px;
+        font-size: 15px;
+    
+    }
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #000000;
+    height: 28px;
+    text-align: center;
+}
